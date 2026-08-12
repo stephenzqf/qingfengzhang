@@ -1,0 +1,192 @@
+% !TEX program = xelatex
+\documentclass[10pt,a4paper]{article}
+
+% === Packages ===
+\usepackage[top=0.50in,bottom=0.35in,left=0.65in,right=0.65in]{geometry}
+\usepackage{fontspec}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+
+% === Fonts ===
+\setmainfont{Times New Roman}
+\setsansfont{Arial}
+
+% === Colors ===
+\definecolor{sectioncolor}{RGB}{30,60,120}
+\definecolor{linkcolor}{RGB}{0,90,160}
+
+% === Hyperlinks ===
+\hypersetup{
+    colorlinks=true,
+    linkcolor=sectioncolor,
+    urlcolor=linkcolor,
+    pdfauthor={Qingfeng Zhang},
+    pdftitle={CV - Qingfeng Zhang}
+}
+
+% === Section formatting ===
+\titleformat{\section}
+    {\Large\bfseries\color{sectioncolor}}
+    {}{0em}
+    {}[\titlerule]
+\titlespacing*{\section}{0pt}{4pt}{2pt}
+
+% === Paragraph and list settings ===
+\setlength{\parindent}{0pt}
+\setlength{\emergencystretch}{1em}
+\setlist{nosep,leftmargin=16pt,labelsep=4pt}
+\setlist[itemize]{label=--}
+
+% === Page style ===
+\pagestyle{empty}
+
+% === Compact item command ===
+\newcommand{\cvitembf}[2]{\item \textbf{#1:} #2}
+\newcommand{\cventry}[2]{\item \textbf{#1.} #2}
+
+\begin{document}
+
+% ============ HEADER ============
+\begin{center}
+    {\Huge\bfseries Qingfeng Zhang}\\[2pt]
+    \faEnvelope\ \href{mailto:qingfengzhang@whu.edu.cn}{qingfengzhang@whu.edu.cn}
+\end{center}
+
+% ============ EDUCATION ============
+\section{Education Background}
+
+\textbf{PhD in Water Resources and Hydropower Engineering} \hfill 2024--Now\\
+Wuhan University, School of Water Resources and Hydropower Engineering\\
+Supervisor: Prof. Jiyun Song
+
+\textbf{B.Eng. in Hydrology and Water Resources Engineering} \hfill 2020--2024\\
+Northwest A\&F University\\
+Supervisor: Prof. Yi Li
+\begin{itemize}[leftmargin=12pt,label=--]
+    \item Ranked 1\textsuperscript{st} in the postgraduate exemption examination; exempted to Wuhan University for PhD.
+    \item Bachelor's thesis selected as one of the university's Top 100 Distinguished Papers.
+\end{itemize}
+
+% ============ RESEARCH INTERESTS ============
+\section{Research Interests}
+
+\begin{itemize}[leftmargin=22pt]
+    \item Urban climate dynamics, heat extremes, and land--atmosphere interactions
+    \item Physics-informed spatiotemporal deep learning for high-resolution urban weather modeling and nowcasting
+    \item Climate-just urban informatics and multi-objective optimization for heat-resilient cities
+\end{itemize}
+
+% ============ PUBLICATIONS ============
+\section{Journal Publications}
+{\small (*: Corresponding author)}
+
+\noindent\textbf{Published Journal Papers:}
+\begin{enumerate}[leftmargin=22pt]
+    \item Zhong Q, Song J*, Wang X, Zhang J, \textbf{Zhang Q}, Li Y. 2026. Modelling of lake--land breeze circulation in a diurnal cycle. \textit{Building and Environment}, 293: 114319. \href{https://doi.org/10.1016/j.buildenv.2026.114319}{doi:10.1016/j.buildenv.2026.114319}.
+    \item \textbf{Zhang Q}, Li Y*, Hu Q, Yao N, Song X, Liu F, Pulatov B, Meng Q, Feng P. 2022. Impacts of Different Socioeconomic Development Levels on Extremely Wet/Dry Events in Mainland China. \textit{Water}, 14(23): 3950. \href{https://doi.org/10.3390/w14233950}{doi:10.3390/w14233950}.
+\end{enumerate}
+
+\noindent\textbf{Manuscripts Submitted / Under Review:}
+\begin{enumerate}[leftmargin=22pt]
+    \item \textbf{Zhang Q}, Song J*, Liu H. Physics-informed spatio-temporal graph neural networks for fine-resolution multi-variable urban weather nowcasting from sparse station observations. Submitted to \textit{Atmospheric Chemistry and Physics}.
+    \item \textbf{Zhang Q}, Song J*, Zhou Y, Zhang J, Zhou Z. Physics-guided deep learning resolves five-metre urban thermal stress for climate-just delivery routing. Submitted to \textit{npj Urban Sustainability}.
+    \item \textbf{Zhang Q}, Song J*, Li Y, Zhou Y. Heatwave risk reshaped by urban expansion-clustering nexus. Under review at \textit{Science Advances}.
+\end{enumerate}
+
+% ============ CONFERENCE PRESENTATIONS ============
+\section{Conference Presentations}
+
+\begin{enumerate}[leftmargin=22pt]
+    \item \textbf{Zhang Q}, Song J. \textit{An Inductive Spatio-Temporal Graph Network for Fine-Resolution Urban Weather Nowcasting Integrating Multi-Source Data and Physical Constraints}. EGU General Assembly 2026, Vienna, Austria, May 3--8, 2026. EGU26-2288. \url{https://doi.org/10.5194/egusphere-egu26-2288}. (Oral)
+
+    \item Song J, \textbf{Zhang Q}. \textit{AI-uWRF: A Physics-Informed Spatiotemporal Diffusion Transformer for High-Resolution Urban Weather Emulation}. EGU General Assembly 2026, Vienna, Austria, May 3--8, 2026. EGU26-2266. \url{https://doi.org/10.5194/egusphere-egu26-2266}. (Oral)
+
+    \item \textbf{Zhang Q}, Song J. \textit{Urban Climate Modeling with AI-Hybrid Approaches}. Hong Kong Workshop, Hong Kong, China, November 26--28, 2025. (Oral)
+
+    \item \textbf{Zhang Q}, Song J. \textit{A Hybrid Modeling Framework for High-Resolution Wet-Heat Mapping in Metropolitan Areas: Integrating Physical Simulation and Deep Learning}. The 4\textsuperscript{th} IAHR-YPN PhD Forum, Dalian, China, September 26--28, 2025. (Oral)
+
+    \item \textbf{Zhang Q}, Song J. \textit{A Hybrid Modeling Framework for High-Resolution Wet-Heat Mapping in Metropolitan Areas: Integrating Physical Simulation and Deep Learning}. The 22\textsuperscript{nd} China Water Forum, Xi'an, China, September 12--14, 2025. (Oral)
+
+    \item Song J, \textbf{Zhang Q}. \textit{The Role of Dynamic Urban Expansion in Shaping Thermal Environments: Evidence from China's 2000 Cities in Past Decades}. The 22\textsuperscript{nd} Annual Meeting of the Asia Oceania Geosciences Society (AOGS), Singapore, July 28--August 1, 2025. HS41-A005. (Oral)
+
+    \item \textbf{Zhang Q}, Song J. \textit{A Novel Hybrid Modeling Framework for Urban Heat Stress: Combining Physical Simulations and CNN-Transformer Networks in Wuhan}. The 22\textsuperscript{nd} Annual Meeting of the Asia Oceania Geosciences Society (AOGS), Singapore, July 28--August 1, 2025. HS41-A006. (Poster)
+
+    \item Song J, \textbf{Zhang Q}. \textit{A Hybrid Modeling Framework for High-Resolution Humid Heat Mapping in Metropolitan Wuhan: Integrating Physical Simulations and Deep Learning}. The 12\textsuperscript{th} International Conference on Urban Climate (ICUC12), Rotterdam, The Netherlands, July 7--11, 2025. ICUC12-201. \url{https://doi.org/10.5194/icuc12-201}. (Oral)
+
+    \item \textbf{Zhang Q}, Song J. \textit{The role of dynamic urban expansion in shaping thermal environments: Evidence from China's 2000 cities in past decades}. The 12\textsuperscript{th} International Conference on Urban Climate (ICUC12), Rotterdam, The Netherlands, July 7--11, 2025. ICUC12-171. \url{https://doi.org/10.5194/icuc12-171}. (Oral)
+
+    \item Song J, \textbf{Zhang Q}. \textit{Impacts of Dynamic Urban Expansion on Heatwaves in Urban Agglomerations: Empirical Analysis of Nearly 2,000 Cities in China, 1990--2022}. The 3\textsuperscript{rd} Sustainable City Workshop, Wuhan, China, May 23--25, 2025. (Oral)
+
+    \item \textbf{Zhang Q}, Song J. \textit{Impacts of Dynamic Urban Expansion on Heatwaves in Urban Agglomerations: Empirical Analysis of Nearly 2,000 Cities in China, 1990--2022}. The 10\textsuperscript{th} Youth Geoscience Forum, Hefei, China, May 9--12, 2025. (Oral)
+\end{enumerate}
+
+% ============ RESEARCH & PROJECT EXPERIENCE ============
+\section{Research \& Project Experience}
+
+\begin{enumerate}[leftmargin=22pt]
+    \item \textbf{PhD Research: Physics-Informed Deep Learning for Urban Weather Nowcasting and Emulation} \hfill 2024--Now\\
+    Wuhan University, School of Water Resources and Hydropower Engineering
+    \begin{itemize}
+        \item \textbf{Causal ML for urban expansion--heatwave nexus.} Used double machine learning to decouple urbanization-induced thermal penalties from climate variability across 1,690 Chinese cities (1990--2022); revealed a dichotomy between internal 3D densification (local intensity/onset) and intercity coalescence (regional frequency/duration), and identified a $\sim$50~km spatial threshold for mega urban heat dome formation. Under review at \textit{Science Advances}.
+
+        \item \textbf{HyperClim-Former: 5-metre thermal stress mapping and climate-just routing.} Developed a physics-guided deep learning framework coupling mesoscale forcings with 3D urban morphology for 5~m, 10-min UTCI reconstruction (RMSE~=~1.00\textdegree C); integrated with agent-based courier simulations and multi-objective Pareto optimization to reduce heat stress by 21.1\% with only 4.3~min added delay per shift. Submitted to \textit{npj Urban Sustainability}.
+
+        \item \textbf{Physics-informed STGNN for station-to-grid urban weather nowcasting.} Designed five physically motivated graph topologies (proximity, thermal similarity, wind advection, terrain, LCZ) for 333~m station-to-grid downscaling; implemented WRF-to-observation transfer learning with thermodynamic constraints, reducing WRF biases by 25--67\% while retaining 92.7\% spatial heterogeneity. Submitted to \textit{Atmospheric Chemistry and Physics}.
+    \end{itemize}
+
+    \item \textbf{Cumulative Effects of Hydrology and Ecology in the Yellow River Basin} \hfill 2022--2023\\
+    Project Lead, Northwest A\&F University
+    \begin{itemize}
+        \item Revealed the hydrology--ecosystem coupling effect in the Yellow River Basin, established a large-scale cumulative effect model, and developed remote sensing data pipelines to support the research findings.
+    \end{itemize}
+
+    \item \textbf{Development and Design of Robot Visual Aid System} \hfill 2021--2022\\
+    Core Member, Northwest A\&F University
+    \begin{itemize}
+        \item Programmed and debugged OpenCV-based real-time object detection under Linux for RoboMaster college league robotics and agricultural picking robots.
+    \end{itemize}
+
+    \item \textbf{Regional Water and Food Big Data Platform} \hfill 2021--2022\\
+    Core Member, Northwest A\&F University
+    \begin{itemize}
+        \item Analyzed regional water consumption patterns and database architecture to map spatiotemporal agricultural water use efficiency.
+    \end{itemize}
+\end{enumerate}
+
+% ============ COMPETITION AWARDS ============
+\section{Competition Awards}
+
+\begin{enumerate}[leftmargin=22pt]
+    \item 2025 China Graduate Smart City Technology and Creative Design Competition, Second Prize, Party Committee Graduate Work Department of Wuhan University, 2025.09.
+    \item The 4\textsuperscript{th} IAHR-YPN PhD Forum, Report Innovation Award, Dalian, China, 2025.09.
+    \item The 10\textsuperscript{th} Youth Geoscience Forum, Excellent Student Presentation Award, Hefei, China, 2025.05.
+    \item The Eighth National College Students' Water Resources Innovation Design Competition, National Level Grand Prize, China Water Resources Education Association, 2023.08.
+    \item The 14\textsuperscript{th} National Student Mathematics Competition (Non-Mathematics), Provincial First Prize, Chinese Mathematical Society, 2023.01.
+    \item China Engineering Robotics Competition and International Open Competition 2022, National First Prize and Third Runner-up, Chinese Society of Artificial Intelligence, 2022.12.
+    \item 2022 National College Robotics Competition (Robomasters) College League Competition and Sectional Competition, Third Prize National Level, Chinese Society of Artificial Intelligence, 2022.07.
+    \item National University Students' Surveying and Mapping Skills Competition (Non-specialized Group of Surveying and Mapping Programming Competition), 2022, National Second Prize, China Association of Surveying and Mapping, 2022.05.
+    \item 2022 Mathematical Contest In Modeling, International Honorable Mention, the Consortium for Mathematics and Its Application, 2022.02.
+    \item Huawei Cup 2\textsuperscript{nd} National College Students' Innovation Design Competition in Agricultural Water Conservancy Engineering and Related Specialties, National Level Grand Prize, China Agricultural Engineering Society, 2021.11.
+    \item 2021 China Engineering Robotics Competition and International Open Competition, National Second Prize, Chinese Society of Artificial Intelligence, 2021.11.
+    \item The 12\textsuperscript{th} Blue Bridge Cup National Software and Information Technology Professionals Competition, Provincial Second Prize, Talent Exchange Center of Ministry of Industry and Information Technology, 2021.05.
+\end{enumerate}
+
+% ============ SKILLS ============
+\section{Skills}
+
+\begin{itemize}[leftmargin=22pt]
+    \cvitembf{HPC \& Numerical Weather Prediction}{WRF and WRF-UCM (multi-domain nesting, urban canopy schemes) on HPC platforms; MPI parallel computing; large-scale NetCDF data processing.}
+
+    \cvitembf{AI \& Spatiotemporal Deep Learning}{Spatiotemporal graph neural networks, diffusion models, Transformers, CNNs; physics-informed neural networks; causal inference; transfer learning; SHAP.}
+
+    \cvitembf{Scientific Programming}{Python (PyTorch, xarray, pandas, scikit-learn), C++, R, MATLAB; distributed and mixed-precision training; agent-based modeling; Linux/HPC environments.}
+
+    \cvitembf{Geospatial \& Microclimate Analysis}{ArcGIS, QGIS, UMEP, ENVI-met, CAD, Origin; LiDAR, satellite, and mobile sensor fusion; local climate zone classification; thermal comfort indices.}
+
+    \cvitembf{Languages}{English (CET-6: 536, CET-4: 550), Chinese (Native).}
+\end{itemize}
+
+\end{document}

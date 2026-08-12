@@ -1,0 +1,12 @@
+# LaTeX build artifacts
+CV/latex/*.aux
+CV/latex/*.log
+CV/latex/*.out
+
+# Python
+__pycache__/
+*.pyc
+
+# OS
+Thumbs.db
+.DS_Store
