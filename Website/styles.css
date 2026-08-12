@@ -5,26 +5,16 @@
 }
 
 :root {
-    --navy: #17324d;
-    --navy-2: #0f2338;
-    --gold: #b78a2c;
-    --accent: #2563ab;
-    --accent-soft: #eaf1f9;
-    --text: #2c3a47;
-    --muted: #64748b;
-    --bg: #f2f4f8;
+    --navy: #1f3a5f;
+    --navy-deep: #152a47;
+    --text: #2b2f33;
+    --muted: #6b7280;
+    --bg: #f6f7f9;
     --card: #ffffff;
-    --border: #e2e8f0;
-    --green: #1f7a3d;
-    --green-bg: #e6f4ea;
-    --green-bd: #a8d5b5;
-    --orange: #b45309;
-    --orange-bg: #fdf2e3;
-    --orange-bd: #f2d5a7;
-    --purple: #6d28d9;
-    --purple-bg: #f1eafd;
-    --purple-bd: #d6c4f7;
-    --blue-ai: #1d4ed8;
+    --border: #e3e6ea;
+    --tag-bg: #f1f2f4;
+    --tag-bd: #d9dce0;
+    --tag-fg: #4b5563;
     --serif: Georgia, "Times New Roman", "Songti SC", serif;
     --sans: "Segoe UI", "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
 }
@@ -49,7 +39,7 @@ body {
 }
 
 a {
-    color: var(--accent);
+    color: var(--navy);
     text-decoration: none;
 }
 
@@ -62,7 +52,7 @@ a:hover {
     position: sticky;
     top: 0;
     z-index: 100;
-    background: rgba(255, 255, 255, 0.92);
+    background: rgba(255, 255, 255, 0.94);
     backdrop-filter: blur(8px);
     border-bottom: 1px solid var(--border);
 }
@@ -105,7 +95,7 @@ a:hover {
 
 .topnav ul li a:hover {
     color: var(--navy);
-    background: var(--accent-soft);
+    background: #eef1f5;
     text-decoration: none;
 }
 
@@ -123,34 +113,39 @@ a:hover {
 .sidebar {
     background: var(--card);
     border: 1px solid var(--border);
-    border-radius: 14px;
-    padding: 28px 24px;
+    border-radius: 10px;
+    padding: 26px 24px;
     position: sticky;
     top: 82px;
-    box-shadow: 0 4px 16px rgba(23, 50, 77, 0.06);
+    align-self: start;
+    max-height: calc(100vh - 98px);
+    overflow-y: auto;
+    box-shadow: 0 2px 10px rgba(21, 42, 71, 0.05);
     text-align: center;
 }
 
+.sidebar::-webkit-scrollbar {
+    width: 6px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background: #d5d9de;
+    border-radius: 3px;
+}
+
 .avatar {
-    width: 84px;
-    height: 84px;
-    margin: 0 auto 14px;
-    border-radius: 50%;
-    background: linear-gradient(135deg, var(--navy), var(--accent));
-    color: #fff;
-    font-family: var(--serif);
-    font-size: 1.9rem;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    letter-spacing: 1px;
-    box-shadow: 0 6px 16px rgba(37, 99, 171, 0.35);
+    width: 100%;
+    max-width: 210px;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    margin: 0 auto 16px;
+    display: block;
 }
 
 .sidebar h1 {
     font-family: var(--serif);
-    font-size: 1.45rem;
+    font-size: 1.4rem;
     color: var(--navy);
     margin-bottom: 2px;
 }
@@ -175,7 +170,7 @@ a:hover {
 }
 
 .side-block {
-    border-top: 1px dashed var(--border);
+    border-top: 1px solid var(--border);
     padding-top: 16px;
     margin-top: 16px;
     text-align: left;
@@ -187,14 +182,14 @@ a:hover {
     gap: 8px;
     font-size: 0.85rem;
     padding: 7px 10px;
-    border-radius: 8px;
-    color: var(--accent);
+    border-radius: 6px;
+    color: var(--navy);
     margin-bottom: 6px;
     transition: background 0.2s;
 }
 
 .side-link:hover {
-    background: var(--accent-soft);
+    background: #eef1f5;
     text-decoration: none;
 }
 
@@ -203,11 +198,11 @@ a:hover {
 }
 
 .side-title {
-    font-size: 0.78rem;
+    font-size: 0.75rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: var(--gold);
+    color: var(--muted);
     margin-bottom: 10px;
 }
 
@@ -232,7 +227,7 @@ a:hover {
     width: 6px;
     height: 6px;
     border-radius: 50%;
-    background: var(--accent);
+    background: var(--navy);
 }
 
 .mini-edu {
@@ -262,9 +257,9 @@ main {
 section {
     background: var(--card);
     border: 1px solid var(--border);
-    border-radius: 14px;
+    border-radius: 10px;
     padding: 30px 32px;
-    box-shadow: 0 4px 16px rgba(23, 50, 77, 0.05);
+    box-shadow: 0 2px 10px rgba(21, 42, 71, 0.04);
 }
 
 h2 {
@@ -278,12 +273,12 @@ h2 {
 }
 
 .sec-no {
-    font-size: 0.82rem;
+    font-size: 0.8rem;
     font-weight: 700;
-    color: var(--gold);
+    color: var(--muted);
     letter-spacing: 1px;
-    border: 1.5px solid var(--gold);
-    border-radius: 6px;
+    border: 1px solid var(--tag-bd);
+    border-radius: 4px;
     padding: 1px 7px;
 }
 
@@ -321,7 +316,7 @@ h2 {
 .pub-list li,
 .conf-list li {
     padding: 14px 0 14px 20px;
-    border-left: 2px solid var(--border);
+    border-left: 1px solid var(--border);
     margin-bottom: 4px;
     position: relative;
 }
@@ -330,12 +325,12 @@ h2 {
 .conf-list li::before {
     content: "";
     position: absolute;
-    left: -5px;
+    left: -4px;
     top: 22px;
-    width: 8px;
-    height: 8px;
+    width: 7px;
+    height: 7px;
     border-radius: 50%;
-    background: var(--gold);
+    background: var(--muted);
     border: 2px solid var(--card);
 }
 
@@ -360,51 +355,24 @@ h2 {
     gap: 10px;
 }
 
-/* ===== Tags ===== */
+/* ===== Tags (monochrome) ===== */
 .tag {
     display: inline-block;
     font-size: 0.7rem;
-    font-weight: 700;
+    font-weight: 600;
     padding: 2px 9px;
-    border-radius: 999px;
+    border-radius: 3px;
     letter-spacing: 0.3px;
     white-space: nowrap;
-}
-
-.tag.published {
-    color: var(--green);
-    background: var(--green-bg);
-    border: 1px solid var(--green-bd);
-}
-
-.tag.review {
-    color: var(--orange);
-    background: var(--orange-bg);
-    border: 1px solid var(--orange-bd);
-}
-
-.tag.oral {
-    color: var(--blue-ai);
-    background: #e8eefc;
-    border: 1px solid #b9cbf5;
-}
-
-.tag.poster {
-    color: var(--purple);
-    background: var(--purple-bg);
-    border: 1px solid var(--purple-bd);
-}
-
-.tag.award-tag {
-    color: var(--gold);
-    background: #fbf4e3;
-    border: 1px solid #ecd9a8;
+    color: var(--tag-fg);
+    background: var(--tag-bg);
+    border: 1px solid var(--tag-bd);
 }
 
 /* ===== Timeline entries ===== */
 .tl-entry {
     padding: 18px 0 20px 22px;
-    border-left: 2px solid var(--border);
+    border-left: 1px solid var(--border);
     margin-left: 8px;
     position: relative;
 }
@@ -412,12 +380,12 @@ h2 {
 .tl-entry::before {
     content: "";
     position: absolute;
-    left: -6px;
+    left: -5px;
     top: 24px;
-    width: 10px;
-    height: 10px;
+    width: 9px;
+    height: 9px;
     border-radius: 50%;
-    background: var(--accent);
+    background: var(--navy);
     border: 2px solid var(--card);
 }
 
@@ -441,9 +409,9 @@ h2 {
 }
 
 .date {
-    color: var(--gold);
+    color: var(--muted);
     font-size: 0.85rem;
-    font-weight: 700;
+    font-weight: 600;
     white-space: nowrap;
 }
 
@@ -485,7 +453,7 @@ h2 {
 .award-year {
     flex-shrink: 0;
     font-weight: 700;
-    color: var(--gold);
+    color: var(--muted);
     font-size: 0.88rem;
     min-width: 46px;
     padding-top: 2px;
@@ -506,13 +474,13 @@ h2 {
 .skill-card {
     background: var(--bg);
     border: 1px solid var(--border);
-    border-radius: 10px;
+    border-radius: 8px;
     padding: 18px 20px;
     transition: border-color 0.2s;
 }
 
 .skill-card:hover {
-    border-color: var(--accent);
+    border-color: var(--navy);
 }
 
 .skill-card h3 {
@@ -539,17 +507,17 @@ h2 {
 .chips span {
     font-size: 0.75rem;
     font-weight: 600;
-    color: var(--accent);
-    background: var(--accent-soft);
-    border: 1px solid #cddcf3;
-    border-radius: 999px;
+    color: var(--tag-fg);
+    background: var(--tag-bg);
+    border: 1px solid var(--tag-bd);
+    border-radius: 3px;
     padding: 2px 10px;
 }
 
 /* ===== Footer ===== */
 footer {
-    background: var(--navy-2);
-    color: rgba(255, 255, 255, 0.75);
+    background: var(--navy-deep);
+    color: rgba(255, 255, 255, 0.72);
     text-align: center;
     padding: 22px 0;
     font-size: 0.88rem;
@@ -564,7 +532,13 @@ footer {
 
     .sidebar {
         position: static;
+        max-height: none;
+        overflow: visible;
         text-align: center;
+    }
+
+    .avatar {
+        max-width: 180px;
     }
 
     .side-block {
@@ -604,7 +578,7 @@ footer {
 
     section {
         padding: 22px 18px;
-        border-radius: 10px;
+        border-radius: 8px;
     }
 
     .tl-entry {
